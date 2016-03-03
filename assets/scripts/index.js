@@ -13,3 +13,8 @@ let makeRequest = function(){
       console.error(jqxhr);
     });
 };
+
+let renderData = function(users){
+  let userListingTemplate = require('./user-listing.handlebars');
+  $('.info-here').html(userListingTemplate({users}));
+};
