@@ -2,11 +2,12 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
 
 $black: #000;
+$brick-red: #b94a48;
 
-.button-here {
-  border: 1px solid $black;
-}
-
-.info-herer {
-  border: 1px solid $black;
+.show-info {
+  background-color: $brick-red;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 75px;
 }
