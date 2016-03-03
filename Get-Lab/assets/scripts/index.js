@@ -1,7 +1,15 @@
 'use strict';
-
-// user require with a reference to bundle the file and use it in this file
-// var example = require('./example');
-
-// use require without a reference to ensure a file is bundled
 require('./example');
+
+let makeRequest = function(){
+  $.ajax({
+      url: 'http://jsonplaceholder.typicode.com/users',
+      method: 'GET',
+      dataType: 'json',
+    }).done(function(data) {
+      console.log(data);
+      renderData(data);
+    }).fail(function(jqxhr) {
+      console.error(jqxhr);
+    });
+};
