@@ -18,3 +18,10 @@ let renderData = function(users){
   let userListingTemplate = require('./user-listing.handlebars');
   $('.info-here').html(userListingTemplate({users}));
 };
+
+$(document).ready(() => {
+  $('.show-info').on('submit', function(e) {
+    e.preventDefault();
+    makeRequest();
+  });
+});
