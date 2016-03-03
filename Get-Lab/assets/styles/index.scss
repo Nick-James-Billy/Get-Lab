@@ -1,2 +1,12 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
+
+$black: #000;
+
+.button-here {
+  border: 1px solid $black;
+}
+
+.info-herer {
+  border: 1px solid $black;
+}
