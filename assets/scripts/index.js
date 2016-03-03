@@ -8,19 +8,19 @@ let makeRequest = function(){
       dataType: 'json',
     }).done(function(data) {
       console.log(data);
-      renderData(data);
+      // renderData(data);
     }).fail(function(jqxhr) {
       console.error(jqxhr);
     });
 };
 
-let renderData = function(users){
-  let userListingTemplate = require('./user-listing.handlebars');
-  $('.info-here').html(userListingTemplate({users}));
-};
+// let renderData = function(users){
+//   let userListingTemplate = require('./user-listing.handlebars');
+//   $('.info-here').html(userListingTemplate({users}));
+// };
 
 $(document).ready(() => {
-  $('.show-info').on('submit', function(e) {
+  $('.show-info').on('click', function(e) {
     e.preventDefault();
     makeRequest();
   });
